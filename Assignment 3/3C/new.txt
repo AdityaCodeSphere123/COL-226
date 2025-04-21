@@ -1,0 +1,219 @@
+## ADITYA ANAND : 2023CS50284
+
+a := 10;
+b := 3.14;
+c := true;
+v1 := 3
+[1,2,3];
+v2 := 2
+[1.5,2.5];
+m1 := 2 2
+[[1,2],[3,4]];
+m2 := 2 2
+[[1.1,2.2],[3.3,4.4]];
+
+Print(a);
+Print(b);
+Print(c);
+Print(m1);
+Print(m2);
+
+Int sum_int := a +i 5;
+Scalar sum_float := b +f 1.0;
+Int diff_int := a -i 5;
+Scalar diff_float := b -f 1.0;
+Int prod_int := a *i 2;
+Scalar prod_float := b *f 2.0;
+Int div_int := a /i 2;
+Scalar div_float := b /f 2.0;
+
+Print(sum_int);
+Print(sum_float);
+Print(diff_int);
+Print(diff_float);
+Print(prod_int);
+Print(prod_float);
+Print(div_int);
+Print(div_float);
+
+## Modulus and Power
+Int mod_result := a % 3;
+Int pow_result := a ^ 2;
+Print(mod_result);
+Print(pow_result);
+
+## Vector Operations
+VectorInt v3 := v1 +v 3
+[4,5,6];
+VectorFloat v4 := v2 *v 2.0;
+
+Print(v3);
+Print(v4);
+
+## Matrix Operations
+MatrixInt m3 := m1 +m 2 2
+[[1,1],[1,1]];
+MatrixFloat m4 := m2 *m 2.0;
+MatrixInt m5 := m1 *m 2;
+
+Print(m3);
+Print(m4);
+Print(m5);
+
+Int vec_elem := v1[1];
+Scalar mat_elem := m2[1][1];
+Print(vec_elem);
+Print(mat_elem);
+
+VectorInt inv_vec := inverse_vector(v1);
+Print(inv_vec);
+
+inv_mat := inverse_matrix(m1);
+Print(inv_mat);
+
+
+Int abs_int_val := absi(-10);
+Print(abs_int_val);
+abs_n := absf(-2e-3);
+Print(abs_n);
+
+## Vector Operations
+VectorInt v3 := v1 +v 3
+[4,5,8];
+VectorFloat v4 := v2 *v 2.0;
+dot_vec := dot(v1, 3
+[1,1,2]);
+mag_vec := mag(v2);
+VectorInt inv_vec := inverse_vector(v1);
+Int dim_vec := dim_vector(v1);
+
+Print(v3);
+Print(v4);
+Print(dot_vec);
+Print(mag_vec);
+Print(inv_vec);
+Print(dim_vec);
+
+t := angle(v1,v3);
+Print(t);
+
+## Boolean Operations and Comparisons
+Bool cond1 := a == 10;
+Bool cond2 := b > 3.4;
+Bool cond3 := c && cond1;
+Bool cond4 := !cond2;
+Bool cond5 := a != 5;
+Bool cond6 := a <= 10;
+Bool cond7 := a >= 11;
+Bool cond8 := a < 11;
+Bool cond9 := a > 9;
+Bool cond10 := c || cond4;
+
+Print(cond1);
+Print(cond2);
+Print(cond3);
+Print(cond4);
+Print(cond5);
+Print(cond6);
+Print(cond7);
+Print(cond8);
+Print(cond9);
+Print(cond10);
+
+## If-Else Statements
+if (!cond1) then {Print(t);} else {
+  x := 134;
+  Print(x);
+};
+
+if (cond4) then {
+  Print(mag_vec);
+} else {
+  Print(dot_vec);
+};
+
+## Loops
+for (i := 0 to 5) do {
+  Print(i);
+};
+
+j := 5;
+while (j > 0) do {
+  Print(j);
+  j := j -i 1;
+};
+
+## Indexing
+Int vec_elem := v1[1];
+Scalar mat_elem := m2[1][1];
+Print(vec_elem);
+Print(mat_elem);
+
+## Matrix Operations
+inv_mat := inverse_matrix(m2);
+det_mat := det(m1);
+trans_mat := transpose(m1);
+dim_mat := dim_matrix(m1);
+mat_mult_res := m1 matrix_mult 2 3
+[[1,0,5],[0,2,4]];
+
+Print(m3);
+Print(m4);
+Print(m5);
+Print(inv_mat);
+Print(det_mat);
+Print(trans_mat);
+Print(dim_mat);
+Print(mat_mult_res);
+
+x := 2 2
+[[0,0],[0,0]];
+x := Input(data4.txt);
+
+## Matrix Operations
+
+trans_mat := transpose(x);
+Print(trans_mat);
+dim_mat := dim_matrix(x);
+Print(dim_mat);
+mat_mult_res := m1 matrix_mult x;
+Print(mat_mult_res);
+x := x +m 2 2
+[[1,0],[0,1]];
+inv_mat := inverse_matrix(x);
+Print(inv_mat);
+x := inv_mat;
+det_mat := det(x);
+Print(det_mat);
+z := x[1][1];
+Print(z);
+
+y := square_root(a);
+Print(y);
+for (i := 1 to 10 ) do {
+    for (j := 2 to 20) do {
+        z := i +i j;
+        Print(z);
+    };
+};
+
+X := minor(x,0,0);
+Print(X);
+
+m1[1][1] := 12;
+Print(m1);
+
+a1 := Input(data.txt);
+a2 := Input(data2.txt);
+a3 := Input(data3.txt);
+a4 := Input(data4.txt);
+
+Print(a1);
+Print(a2);
+Print(a3);
+Print(a4);
+
+
+raise Error;
+z := square_root(inverse(a));
+Print(z);
