@@ -39,12 +39,11 @@ let check_sig (sign: signature) : bool =
         check_unique sign
     
 (* 2. Check if a term is well-formed according to a signature *)
-let wfterm signatures term =
-  (* Create a hashtable for quick symbol lookup *)
-  let sig_table = Hashtbl.create (List.length signatures) in
+let wfterm sym term =
+  let sig_table = Hashtbl.create (List.length sym) in
   List.iter (fun ((sign, arity) as sym) -> 
     Hashtbl.add sig_table sign arity
-  ) signatures;
+  ) sym;
   
   (* Recursive check function *)
   let rec check = function
